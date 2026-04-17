@@ -54,6 +54,37 @@ In this step, I implemented delegation of control for the Help Desk role using t
 
 The goal was to allow Help Desk to manage workstation computer objects without giving full Domain Admin privileges.
 
+## Step 12 – Sales User Provisioning Automation
+
+In this step, I expanded the Active Directory environment by automating the provisioning of additional Sales department users with PowerShell.
+
+The goal was to create the environment that could support future help desk tickets, permissions scenarios, onboarding workflows, and group-based administration.
+
+### What I configured:
+
+- Created a PowerShell automation script for employee provisioning
+- Added 17 Sales users into the `Sales` OU
+- Assigned all new users to the `Sales_Team` security group
+- Applied common directory attributes such as:
+  - Given Name
+  - Surname
+  - Display Name
+  - User Principal Name
+  - Department
+  - Title
+  - Company
+  - Office
+- Configured accounts with a standard lab password and non-expiring password policy
+- Generated a CSV log to track provisioning results
+
+### Validation performed:
+
+- Verified the `Sales` OU path in Active Directory
+- Confirmed the script executed successfully after correcting the OU path handling
+- Validated that all new users appeared in the Sales OU
+- Confirmed group membership assignment to `Sales_Team`
+- Reviewed the CSV log for both the initial error state and the successful provisioning results
+
 ### What I configured:
 - Delegated access on the `Workstations` OU
 - Assigned permissions to allow:
