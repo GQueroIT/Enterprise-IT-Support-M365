@@ -1,131 +1,186 @@
-# Enterprise Help Desk & Microsoft 365 Support Simulation
+# Enterprise IT Support & Microsoft 365 Environment
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Active%20Directory-Identity%20Management-blue" />
+  <img src="https://img.shields.io/badge/Microsoft%20365-Cloud%20Administration-orange?logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jira-Service%20Management-blue?logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/ServiceNow-ITSM-green" />
+  <img src="https://img.shields.io/badge/PowerShell-Automation-black?logo=powershell&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows%20Server-AD%20DS-lightgrey" />
+  <img src="https://img.shields.io/badge/IT%20Support-Operations-red" />
+</p>
+
+This project represents a structured IT support environment built to reflect real-world Help Desk operations, identity management, ticketing workflows, automation, and system administration.
+
+This environment is actively being built and expanded in phases.
+
+What started as individual components is evolving into a connected system where infrastructure, support workflows, and administrative processes work together.
+
+---
+
+## How to Navigate This Repository
+
+If you are reviewing this project, here is the best way to approach it:
+
+- Start with **01-Active-Directory-Build** to understand the infrastructure foundation  
+- Review **02-Ticketing-System-Setup** to see how support workflows are being introduced  
+- Follow upcoming phases as they are implemented to see how the environment evolves  
+- Focus on how systems connect, not just individual configurations  
+
+This repository is structured to reflect how IT environments are built over time.
+
+---
 
 ## Overview
 
-This project simulates a real-world enterprise IT environment focused on Help Desk operations, Active Directory administration, Microsoft 365 management, and structured troubleshooting workflows.
+This project is focused on building a realistic IT support environment that includes:
 
-The goal of this project is to demonstrate hands-on technical skills used in entry-level and mid-level IT roles by building, managing, and supporting a realistic infrastructure from the ground up.
+- Identity and access management (Active Directory)  
+- Ticketing systems and workflow structure  
+- User provisioning and lifecycle management  
+- Automation of administrative tasks  
+- Troubleshooting and issue resolution  
+- Documentation and operational processes  
 
-This project is being developed in phases and will continue to evolve to reflect real-world IT operations and workflows.
-
----
-
-## Project Objectives
-
-- Build and manage an on-premises Active Directory environment
-- Simulate Help Desk ticketing workflows and issue resolution
-- Implement user provisioning, access control, and automation
-- Integrate Microsoft 365 administration and cloud services
-- Develop structured troubleshooting and documentation practices
-- Demonstrate real-world IT support scenarios and escalation processes
+Rather than isolated labs, this project is built as a continuous environment where each phase builds on the previous one.
 
 ---
 
-## Technologies Used
+## Featured Work (Current Focus)
 
-- Windows Server (Active Directory Domain Services)
-- Windows 10/11 Client Systems
-- PowerShell (Automation & Administration)
-- VirtualBox (Lab Environment)
-- Microsoft 365 (Planned Integration)
-- ServiceNow (Planned Primary Ticketing System)
-- Jira Service Management (Active - Ticketing & Workflow Simulation)
-- CSV Logging & Documentation Systems
+These are the strongest implemented areas so far:
+
+- Active Directory domain deployment and validation  
+- OU structure and user/group management  
+- Group Policy configuration  
+- Help Desk delegation model (least privilege)  
+- PowerShell automation for user provisioning with logging  
+- Initial Jira Service Management setup and ticket lifecycle validation  
+
+These represent the foundation of the environment.
 
 ---
 
 ## Project Structure
 
 01-Active-Directory-Build  
-Core domain infrastructure including AD DS, OU structure, users, groups, GPOs, delegation, and automation.
+Core identity infrastructure including AD DS, OU structure, users, groups, GPOs, delegation, and automation  
 
 02-Ticketing-System-Setup  
-Implementation of Help Desk ticketing systems using Jira (active) and ServiceNow (planned) to simulate real support workflows.
+Jira Service Management (active) and ServiceNow (planned) for ticket lifecycle and workflow structure  
 
-03-Microsoft-365-Simulation  
-User management, licensing, and administration within Microsoft 365.
+03-Microsoft-365-Environment  
+User management, licensing, and cloud administration (in progress)  
 
-04-Ticket-Scenarios  
-Realistic Help Desk scenarios including password resets, access issues, onboarding, and troubleshooting.
+04-Desktop-Imaging  
+Workstation provisioning, OS deployment, and system standardization (planned)  
 
-05-Knowledge-Base  
-Structured documentation for common issues, resolutions, and standard operating procedures.
+05-Ticket-Scenarios  
+Real-world support scenarios including onboarding, access issues, and troubleshooting  
 
-06-Escalation-Scenarios  
-Simulated escalation workflows between Help Desk tiers and system administrators.
+06-Knowledge-Base  
+Documentation, SOPs, and repeatable resolution workflows  
+
+07-Escalation-Scenarios  
+Tiered support model simulating escalation between Help Desk and administrators  
 
 90-Assets  
-Configuration files, scripts, and supporting materials.
+Scripts, configurations, and supporting materials  
 
 99-Templates  
-Reusable templates for documentation, tickets, and workflows.
+Reusable templates for tickets, documentation, and workflows  
 
 ---
 
 ## Current Progress
 
-### Active Directory Build (Completed)
+### Active Directory (Completed Foundation)
+- Domain: corp.smartech.com  
+- OU structure implemented  
+- Users and groups configured  
+- Group Policy Objects (GPO) applied  
+- File shares and permissions validated  
+- Domain-joined workstation configured  
+- Help Desk delegation model implemented  
+- PowerShell automation for user provisioning with logging  
 
-- Domain: corp.smartech.com
-- Organizational Unit structure implemented
-- User and group management configured
-- Group Policy Objects (GPO) applied
-- File shares and permissions validated
-- Domain-joined workstation configured
-- Help Desk delegation model implemented
-- PowerShell automation for user provisioning with logging
-
-### Ticketing System Setup (In Progress)
-
-- Jira Service Management environment configured
-- Initial ticket created to simulate Help Desk workflow
-- Ticket lifecycle structure introduced:
-  - Issue creation
-  - Investigation
-  - Resolution
-- Evidence and documentation organized per step
+### Ticketing System (Initial Implementation)
+- Jira Service Management environment configured  
+- First ticket created and fully resolved to validate workflow  
+- Ticket lifecycle verified:
+  - Issue creation  
+  - Investigation  
+  - Resolution  
+- Initial documentation and evidence structure established  
 
 ---
 
-## Key Skills Demonstrated
+## Desktop Imaging & Device Provisioning (Planned)
 
-- Active Directory Domain Services (AD DS)
-- Organizational Unit (OU) design and management
-- Group-based access control (RBAC)
-- Group Policy (GPO) configuration
-- PowerShell automation and scripting
-- User provisioning and lifecycle management
-- Delegation of control (least privilege model)
-- Troubleshooting authentication and permission issues
-- Ticket lifecycle management (Jira)
-- Documentation and operational workflow design
+This phase will focus on preparing and deploying workstations in a structured and repeatable way.
+
+Planned areas include:
+
+- Operating system installation and configuration  
+- System baseline setup and standardization  
+- Device naming and domain integration  
+- Software installation and environment preparation  
+- Post-deployment validation  
+
+This will represent how endpoints are prepared before being handed off to users in a real environment.
+
+---
+
+## Key Capabilities Demonstrated
+
+- Active Directory administration and identity management  
+- Organizational Unit (OU) design and delegation  
+- Group Policy (GPO) configuration and enforcement  
+- Role-based access control (AGDLP / RBAC)  
+- PowerShell automation for administrative workflows  
+- User provisioning and lifecycle management  
+- Ticket lifecycle management (Jira Service Management)  
+- Troubleshooting authentication and access issues  
+- Documentation and operational workflow design  
 
 ---
 
 ## In Progress
 
-- ServiceNow ticketing system implementation (planned primary ITSM platform)
-- Expansion of Jira ticket workflows (active)
-- Integration of automation into ticket workflows
-- Microsoft 365 environment configuration
-- Real-world troubleshooting scenarios
-- Knowledge base and SOP documentation
-- Escalation workflow simulation
+- ServiceNow implementation (planned primary ITSM platform)  
+- Expansion of Jira ticket workflows and automation  
+- Microsoft 365 environment configuration  
+- Desktop imaging and device provisioning phase  
+- Real-world troubleshooting scenarios  
+- Knowledge base and SOP development  
+- Escalation workflow simulation  
+
+---
+
+## What This Demonstrates
+
+- Ability to manage identity and access systems  
+- Understanding of Help Desk operations and workflows  
+- Experience working with ticketing systems  
+- Automation of administrative tasks  
+- Structured troubleshooting approach  
+- Clear documentation and process organization  
 
 ---
 
 ## Outcome
 
-This project is designed to represent a realistic IT support environment, combining infrastructure management, automation, and troubleshooting.
+This project is evolving into a full IT support environment that combines:
 
-It demonstrates the ability to:
-- Build and manage enterprise systems
-- Automate administrative tasks
-- Follow structured support processes
-- Document and resolve technical issues effectively
+- Infrastructure  
+- Support workflows  
+- Automation  
+- Troubleshooting  
+
+It reflects how real IT environments are built, supported, and improved over time.
 
 ---
 
 ## Notes
 
-This project is actively being developed and will continue to expand with additional features, automation, and integrations to better reflect real-world enterprise environments.
+This environment is actively being developed and expanded to better reflect real-world enterprise operations, including deeper cloud integration, automation, and support workflows.
