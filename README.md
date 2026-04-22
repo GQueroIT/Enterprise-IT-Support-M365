@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Active%20Directory-Identity%20Management-blue" />
-  <img src="https://img.shields.io/badge/Microsoft%20365-Cloud%20Administration-orange?logo=microsoft&logoColor=white" />
   <img src="https://img.shields.io/badge/Jira-Service%20Management-blue?logo=jira&logoColor=white" />
   <img src="https://img.shields.io/badge/ServiceNow-ITSM-green" />
   <img src="https://img.shields.io/badge/PowerShell-Automation-black?logo=powershell&logoColor=white" />
