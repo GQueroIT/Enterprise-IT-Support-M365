@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/IT%20Support-Operations-red" />
 </p>
 
-This project represents a structured IT support environment designed to reflect real-world Help Desk operations, identity management, ticketing workflows, automation, and system administration.
+This project represents a structured IT support environment designed to reflect real-world Help Desk operations, identity management, ticketing workflows, desktop provisioning, automation, and system administration.
 
 This environment is actively being built and expanded in phases, evolving into a connected system where infrastructure, support workflows, and administrative processes operate together.
 
@@ -21,11 +21,11 @@ This environment is actively being built and expanded in phases, evolving into a
 If you are reviewing this project, here is the best way to approach it:
 
 - Start with **01-Active-Directory-Build** to understand the infrastructure foundation  
-- Review **02-Ticketing-System-Setup** to see how support workflows are being introduced  
-- Follow upcoming phases as they are implemented to see how the environment evolves  
+- Review **02-Ticketing-System-Setup** to see how support workflows are introduced  
+- Continue through each phase to observe how the environment evolves  
 - Focus on how systems connect, not just individual configurations  
 
-This repository is structured to reflect how IT environments are built over time.
+This repository is structured to reflect how real IT environments are built over time.
 
 ---
 
@@ -33,11 +33,12 @@ This repository is structured to reflect how IT environments are built over time
 
 This project is focused on building a realistic IT support environment that includes:
 
-- Identity and access management (Active Directory)  
-- Ticketing systems and workflow structure  
-- User provisioning and lifecycle management  
-- Automation of administrative tasks  
-- Troubleshooting and issue resolution  
+- Identity and access management (Active Directory)
+- Ticketing systems and workflow structure
+- Desktop imaging and workstation provisioning
+- User provisioning and lifecycle management
+- Automation of administrative tasks
+- Troubleshooting and issue resolution
 - Documentation and operational processes  
 
 Rather than isolated labs, this project is built as a continuous environment where each phase builds on the previous one.
@@ -46,8 +47,6 @@ Rather than isolated labs, this project is built as a continuous environment whe
 
 ## Featured Work (Current Focus)
 
-These are the strongest implemented areas so far:
-
 - Active Directory domain deployment and validation  
 - OU structure and user/group management  
 - Group Policy configuration  
@@ -55,13 +54,11 @@ These are the strongest implemented areas so far:
 - PowerShell automation for user provisioning with logging  
 - Initial Jira Service Management setup and ticket lifecycle validation  
 
-These represent the foundation of the environment.
-
 ---
 
 ## Tools & Technologies
+
 - Windows Server (Active Directory Domain Services)
-- Microsoft 365 (in progress)
 - Jira Service Management
 - ServiceNow (planned)
 - PowerShell
@@ -73,31 +70,28 @@ These represent the foundation of the environment.
 
 ## Project Structure
 
-01-Active-Directory-Build  
+### 01-Active-Directory-Build  
 Core identity infrastructure including AD DS, OU structure, users, groups, GPOs, delegation, and automation  
 
-02-Ticketing-System-Setup  
+### 02-Ticketing-System-Setup  
 Jira Service Management (active) and ServiceNow (planned) for ticket lifecycle and workflow structure  
 
-03-Microsoft-365-Environment  
-User management, licensing, and cloud administration (in progress)  
+### 03-Desktop-Imaging  
+Workstation provisioning, OS deployment, system standardization, and domain integration  
 
-04-Desktop-Imaging  
-Workstation provisioning, OS deployment, and system standardization (planned)  
-
-05-Ticket-Scenarios  
+### 04-Ticket-Scenarios  
 Real-world support scenarios including onboarding, access issues, and troubleshooting  
 
-06-Knowledge-Base  
+### 05-Knowledge-Base  
 Documentation, SOPs, and repeatable resolution workflows  
 
-07-Escalation-Scenarios  
+### 06-Escalation-Scenarios  
 Tiered support model simulating escalation between Help Desk and administrators  
 
-90-Assets  
+### 90-Assets  
 Scripts, configurations, and supporting materials  
 
-99-Templates  
+### 99-Templates  
 Reusable templates for tickets, documentation, and workflows  
 
 ---
@@ -105,7 +99,8 @@ Reusable templates for tickets, documentation, and workflows
 ## Current Progress
 
 ### Active Directory (Completed Foundation)
-- Domain: corp.smartech.com  
+
+- Domain deployed and validated  
 - OU structure implemented  
 - Users and groups configured  
 - Group Policy Objects (GPO) applied  
@@ -114,20 +109,22 @@ Reusable templates for tickets, documentation, and workflows
 - Help Desk delegation model implemented  
 - PowerShell automation for user provisioning with logging  
 
+---
+
 ### Ticketing System (Initial Implementation)
+
 - Jira Service Management environment configured  
-- First ticket created and fully resolved to validate workflow  
-- Ticket lifecycle verified:
+- First ticket created and fully resolved  
+- Ticket lifecycle validated:
   - Issue creation  
   - Investigation  
   - Resolution  
-- Initial documentation and evidence structure established  
 
 ---
 
-## Desktop Imaging & Device Provisioning (Planned)
+### Desktop Imaging & Device Provisioning (Planned)
 
-This phase will focus on preparing and deploying workstations in a structured and repeatable way.
+This phase focuses on preparing and deploying workstations in a structured and repeatable way.
 
 Planned areas include:
 
@@ -137,28 +134,26 @@ Planned areas include:
 - Software installation and environment preparation  
 - Post-deployment validation  
 
-This will represent how endpoints are prepared before being handed off to users in a real environment.
-
 ---
 
 ## Skills Demonstrated
-- Active Directory administration and identity management
-- Help Desk ticket lifecycle management (Jira)
-- Role-based access control (AGDLP / RBAC)
-- PowerShell automation for user provisioning
-- User lifecycle management and onboarding workflows
-- Troubleshooting authentication and access issues
-- Documentation and operational workflow design
-- Understanding of enterprise IT support processes
+
+- Active Directory administration and identity management  
+- Help Desk ticket lifecycle management (Jira)  
+- Role-based access control (AGDLP / RBAC)  
+- PowerShell automation for user provisioning  
+- User lifecycle management and onboarding workflows  
+- Troubleshooting authentication and access issues  
+- Desktop provisioning and system preparation  
+- Documentation and operational workflow design  
 
 ---
 
 ## In Progress
 
-- ServiceNow implementation (planned primary ITSM platform)  
-- Expansion of Jira ticket workflows and automation  
-- Microsoft 365 environment configuration  
-- Desktop imaging and device provisioning phase  
+- ServiceNow implementation  
+- Expansion of ticket workflows and automation  
+- Desktop imaging and device provisioning  
 - Real-world troubleshooting scenarios  
 - Knowledge base and SOP development  
 - Escalation workflow simulation  
@@ -170,6 +165,7 @@ This will represent how endpoints are prepared before being handed off to users 
 - Ability to manage identity and access systems  
 - Understanding of Help Desk operations and workflows  
 - Experience working with ticketing systems  
+- Desktop deployment and system preparation  
 - Automation of administrative tasks  
 - Structured troubleshooting approach  
 - Clear documentation and process organization  
@@ -182,6 +178,7 @@ This project is evolving into a full IT support environment that combines:
 
 - Infrastructure  
 - Support workflows  
+- Desktop provisioning  
 - Automation  
 - Troubleshooting  
 
