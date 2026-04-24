@@ -46,6 +46,17 @@ Automation is designed to:
 - Preserve approval-driven tasks
 - Support escalation where required
 
+## Automation Logging
+All automation runs generate structured log records capturing:
+- Ticket metadata
+- Action taken
+- Disposition
+- Escalation outcomes
+- Notes for auditability
+
+Log file:
+jira-automation-log.csv
+
 ## Future Enhancements
 Planned additions:
 - SLA timer simulation

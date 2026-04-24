@@ -1,1 +1,7 @@
-TicketKey,Scenario,Requester,AffectedUser,Department,Priority,ActionTaken,OU,Group,Status,Technician,DateTime,Notes
+TicketKey,Scenario,Requester,AffectedUser,Department,Priority,ActionTaken,OU,Group,Disposition,Notes
+INC-1001,New User Provisioning,Maria Torres,maria.torres,Sales,Medium,Created AD user and assigned security group,"OU=Sales,DC=corp,DC=smartech,DC=com",Sales_Team,Resolved,Provisioning completed successfully
+INC-1002,Password Reset,James Carter,jcarter,IT,Low,Password reset initiated,N/A,N/A,Resolved,Identity verified and password reset completed
+INC-1003,Access Remediation,Susan Reed,sreed,HR,Medium,Adjusted shared folder permissions,"OU=HR,DC=corp,DC=smartech,DC=com",HR_Share_RW,Resolved,Access restored to HR share
+INC-1004,New User Provisioning,David Lin,dlin,Finance,High,Pending manager approval,"OU=Finance,DC=corp,DC=smartech,DC=com",Finance_Users,Waiting for User,Awaiting approval before provisioning
+INC-1005,Access Remediation,Kevin Moore,kmoore,Sales,High,Escalated to Systems Admin,"OU=Sales,DC=corp,DC=smartech,DC=com",Sales_Team,Escalated,Privilege request exceeded help desk authority
+INC-1006,Password Reset,Alicia Gomez,agomez,Operations,Low,Password reset completed,N/A,N/A,Resolved,User confirmed successful login
